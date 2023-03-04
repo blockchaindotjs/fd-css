@@ -1,0 +1,299 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+    transition: 1s ease-in-out;
+}
+
+button {
+    background-color: #3882f6;
+    color: #fff;
+    padding: 10px;
+    width: 100px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 900;
+    text-align: center;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+/* Header + Logo / Nav / Nav-Topside  */
+header, .hero-part  {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1f2937;
+    padding: 1% 5%;
+}
+
+header{
+    margin-bottom: 0px;
+}
+
+.header-logo img {
+    position:relative;
+    left: -3.7%;               /*in order to arrange the appropriate positioning for the logo location, also logo width*/
+    width: 17%;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
+}
+
+.nav-topside-link {
+    align-self: center;
+    text-decoration: none;
+    font-size: 19.7px;
+    color: #e5e7eb;    
+    margin: 0 20px;
+}
+
+/* Hero */
+.hero-part {
+    padding: 3.5%;
+    justify-content: center;
+}
+
+.hero-c1 {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.hero-part h1 {
+    font-size: 48px;
+    font-weight: 900; /* the boldest number that can be assigned as a value 100-900 */
+    color: #f9faf8;
+}
+
+.hero-part p  {
+    font-size: 18px;
+    margin-top: -20px;
+    color: #e5e7eb;
+}
+
+.hero-c2 {
+    display: flex;
+    background-color: #1f2937;
+    width: 40vw;                            /*768px*/
+    justify-content: center;    
+}
+
+.image-placeholder img {  
+    position: absolute;
+    left: 63%;  
+    top: 29%;    
+    width: 18%;
+    height: auto;
+}
+
+/* newArrivals */
+.newArrivals-part {
+    display: flex;
+    flex-direction: column;
+}
+
+.newArrivals-part h3 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.newArr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px auto;
+}
+
+.newArrivals-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.newArrivals-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 175px;
+    height: auto;
+    margin: 10px 20px;
+}
+
+.newArrivals-box {
+    border: 3px solid #3882f6;
+    height: 200px;
+    justify-content: space-evenly;
+    width: 200px;
+    border-radius: 10%;
+    margin: auto;
+} 
+
+.newArrivals-text {
+    text-align: center;
+    color: #56595f;
+    font-size: 12px;
+}
+
+.newArrivals-box img{
+    position: relative;
+    width: 75%;
+    left: 12.3%;
+}
+
+/* Comment */
+
+.comment-part {
+    display: flex;
+    flex-direction: column;
+    background-color: #e5e7eb;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+    margin-top: 150px;
+}
+
+.comment {
+    width: 65%;
+    font-size: 32px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1f2937;
+    text-align: left;
+    padding: 7%;
+}
+
+.legend {
+    margin-top: -90px;
+    margin-left: 40%;
+    font-weight: 600;
+    font-size: 29px;
+    font-style: normal;
+    color: #1f2937;
+    float: right;
+}
+
+/* Subscribe */
+
+.subscribe-part {
+    display: flex;
+    width: 100vw;
+    margin: auto;
+    padding: 5% 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-banner {
+    display: flex;
+    flex-direction: row;
+    background-color: #3882f6;
+    border-radius: 5px;    
+    height: 110px;
+    width: 150vw;
+    justify-content: space-evenly;
+    align-items: center;  
+}
+
+aside {
+    color: #fff;
+    justify-content: center;
+}
+
+.subscribe-btn {
+    border: #fff 2px solid; 
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background-color: #1f2937;
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+}
+
+.copy {
+    color: #fff;
+    text-align: center;
+}
+
+/* responsiveness */
+
+@media only screen and (max-width: 768px) {
+    .subscribe-section, .subscribe-banner {
+        width: 100vw;    
+    }
+    aside p {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    section {
+        margin: 10px 0;
+        padding: 10px 0;
+    }
+    
+    .hero-part, .newArrivals-part, .comment-part, .subscribe-section {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: auto;
+    }
+
+    .hero-c1, .hero-c2, .newArrivals-col, .subscribe-banner {
+        width: 100vw;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .newArrivals-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subscribe-banner, aside {
+        flex-direction: column;
+        line-height: normal;
+        height: auto;
+        width: 100vw;
+    }
+
+    aside p {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .comment-part q {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .newArr {
+        flex-direction: column;
+    }
+
+    .subscribe-banner {
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+}
+
